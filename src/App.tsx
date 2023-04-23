@@ -6,12 +6,15 @@ import { GlobalSTyle } from "./styles/globa";
 
 import { Router } from "./Router";
 
+import { CyclesContextProvider } from "./contexts/CyclesContext";
+
 export const App = () => {
   return (
     <ThemeProvider theme={defaultTheme}>
       <BrowserRouter>
-        <Router />
-
+        <CyclesContextProvider>
+          <Router />
+        </CyclesContextProvider>
         <GlobalSTyle />
       </BrowserRouter>
     </ThemeProvider>
