@@ -59,6 +59,8 @@ export const Home = () => {
   const task = watch("task");
   const isSubmitDisabled = !task;
 
+  console.log(!!activeCycle);
+
   return (
     <HomeContainer>
       <form onSubmit={handleSubmit(handleCreateNewCycle)}>
@@ -67,7 +69,7 @@ export const Home = () => {
         </FormProvider>
         <Countdown />
 
-        {activeCycle ? (
+        {!!activeCycle ? (
           <StopCountdownButton onClick={interruptCurrentCycle} type="button">
             <HandPalm size={24} />
             Interromper

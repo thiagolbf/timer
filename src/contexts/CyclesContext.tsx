@@ -55,6 +55,7 @@ export function CyclesContextProvider({
         }
       })
     );
+    setActiveCycleId(null);
   };
 
   const createNewCycle = (data: CreateCycleData) => {

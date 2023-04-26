@@ -32,11 +32,9 @@ export const Countdown = () => {
           );
 
           if (secondsDifference >= totalSeconds) {
-            markCurrentCycleAsFinished();
-
             setSecondsPassed(totalSeconds);
-
             clearInterval(interval);
+            markCurrentCycleAsFinished();
           } else {
             setSecondsPassed(secondsDifference);
           }
