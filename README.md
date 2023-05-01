@@ -16,4 +16,4 @@
 
 ### Link para acessar o projeto:
 
-<a href="https://movie-store-teal.vercel.app/" target="_blank">Link do projeto</a>
+<a href="https://timer-gilt.vercel.app/" target="_blank">Link aplicação</a>
