@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { CyclesContext } from "../../contexts/CyclesContext";
 
 import { formatDistanceToNow } from "date-fns";
-import ptBr from "date-fns/locale/pt-BR";
+
 import { ptBR } from "date-fns/locale";
 
 export const History = () => {
